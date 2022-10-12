@@ -283,7 +283,8 @@ downloadPdf = (dom, options, cb) => {
     if (typeof cb === "function") {
       cb(pdf);
     }
-    return pdf.save(filename);
+    return;
+    //return pdf.save(filename);
   }).catch(error => {
     // Remove overlay
     document.body.removeChild(overlay);
